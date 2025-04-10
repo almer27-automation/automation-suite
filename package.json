@@ -1,0 +1,40 @@
+{
+  "name": "automation-suite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:selenium": "node --experimental-modules ./node_modules/mocha/bin/mocha tests/seleniumTest.spec.mjs",
+    "test:playwright": "playwright test tests/playwrightTest.spec.cjs",
+    "test": "npm run test:selenium && npm run test:playwright"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almer27-automation/automation-suite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/almer27-automation/automation-suite/issues"
+  },
+  "homepage": "https://github.com/almer27-automation/automation-suite#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.0",
+    "chromedriver": "^135.0.1"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "assert": "^2.1.0",
+    "chai": "^5.2.0",
+    "mocha": "^11.1.0",
+    "playwright": "^1.51.1",
+    "playwright-core": "^1.51.1",
+    "selenium-webdriver": "^4.31.0",
+    "undici-types": "^6.21.0"
+  }
+}
