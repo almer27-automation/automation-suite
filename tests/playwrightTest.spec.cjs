@@ -9,5 +9,5 @@ test('Playwright form test', async ({ page }) => {
   await page.fill('input[data-test="password"]', 'secret_sauce');
   await page.locator('[data-test="login-button"]').click();
   
-  await expect(page).toHaveURL(/dashboard/);
+  await expect(page).toHaveURL(/inventory.html/);
 });
