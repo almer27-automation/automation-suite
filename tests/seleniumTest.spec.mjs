@@ -7,7 +7,7 @@ describe('Todo App Tests', function() {
   this.timeout(15000);
 
   beforeEach(async () => {
-    driver = await new Builder().forBrowser('chrome').build();
+    driver = await new Builder().forBrowser('firefox').build();
     await driver.get('https://demo.playwright.dev/todomvc');
   });
 
